@@ -1,0 +1,14 @@
+<p>
+  component1 works!
+</p>
+  <br>
+  <p> 2 -way :</p>
+  <input [(ngModel)]="name" type="text">
+  <br>
+  <p> On click: </p>
+  <input #myText type="text" >
+  <button (click)="clickFunction(myText.value)"> Send </button>
+
+
+<app-component2 [parentData]="name"> </app-component2>
+<!-- (childEvent)="message=$event" [parentData]="name">  -->
